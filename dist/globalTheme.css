@@ -215,11 +215,11 @@ html section {
 html .gallery {
   margin: 0 5%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 280px);
+  grid-template-columns: repeat(auto-fit, 260px);
   gap: 20px;
 }
 html .gallery.mobile {
-  grid-template-columns: repeat(auto-fit, 180px);
+  grid-template-columns: repeat(auto-fit, 160px);
 }
 html .gallery.mobile .item {
   padding-top: 200%;
