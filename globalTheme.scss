@@ -145,48 +145,60 @@ html {
         }
                                                    
         header {
-            background-color: #0B0C1D;
-            height: 50px;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
             position: sticky;
+            min-height: 50px;
+            background-color: #0B0C1D;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
             top: 0;
             left: 0;
             z-index: 9999;
 
-            h1 {
-                color: $primaryColor;
-                position: absolute;
-                bottom: 0;
-                left: 10px;
+            .warning {
+                background-color: $highlightColor;
+                bottom: calc(-1.3rem - 10px);
+                width: 100%;
+                text-align: center;
             }
 
-            ul {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                max-width: 30%;
-                position: absolute;
-                bottom: 0;
-                right: 10px;
+            .horizontal-align {
+                height: 50px;
+
+                h1 {
+                    color: $primaryColor;
+                    padding: 10px;
+                    
+                }
+
                 
-                li {
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    list-style: none;
                     padding: 0;
                     margin: 0;
-                    color: $primaryColor;
-                    font-size: 1.2rem;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    cursor: pointer;
-                    transition: all 0.3s ease-in-out;
-                    width: auto;
-                    // background-color: red;
+                    max-width: 30%;
+                    position: absolute;
+                    bottom: 0;
+                    right: 10px;
+                    
+                    li {
+                        padding: 0;
+                        margin: 0;
+                        color: $primaryColor;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        cursor: pointer;
+                        transition: all 0.3s ease-in-out;
+                        width: auto;
+                        // background-color: red;
 
-                    &:hover {
-                        color: rgb(255, 255, 255);
+                        &:hover {
+                            color: rgb(255, 255, 255);
+                        }
                     }
                 }
             }
@@ -267,10 +279,14 @@ html {
         
         display: grid;
         grid-template-columns: repeat(auto-fit, 260px);
-
+        @media screen and (min-width: 960px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
         &.mobile {
             grid-template-columns: repeat(auto-fit, 160px);
-            
+            @media screen and (min-width: 960px) {
+                grid-template-columns: repeat(2, 10px);
+            }
             .item {
                 padding-top: 200%;
             }

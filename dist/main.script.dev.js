@@ -1,6 +1,17 @@
 "use strict";
 
-// console.log('connected to script');
+windowWidth = window.innerWidth;
+
+if (windowWidth < 760) {
+  header = document.querySelector('header');
+  warning = document.createElement('div');
+  warning.classList.add('warning');
+  warning.innerHTML = 'for the best experiece, please use a computer';
+  console.log(warning);
+  header.appendChild(warning);
+} // console.log('connected to script');
+
+
 document.querySelector('.social-widget').addEventListener('click', function (e) {
   return document.querySelector('.social-widget').classList.toggle('active');
 });
@@ -51,16 +62,7 @@ projects = [//  {
 
 function openDetailsPane(project) {
   windowWidth = window.innerWidth;
-
-  if (windowWidth < 760) {
-    header = document.querySelector('header');
-    warning = document.createElement('div');
-    warning.classList.add('warning');
-    warning.innerHTML = 'for the best experiece, please use a computer';
-    header.appendChild(warning);
-    return;
-  }
-
+  if (windowWidth < 760) return;
   projectAtIndex = projects.filter(function (projectItem) {
     return projectItem.id == project;
   })[0];

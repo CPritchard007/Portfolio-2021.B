@@ -112,21 +112,28 @@ html body::before {
   height: 100%;
 }
 html body header {
-  background-color: #0B0C1D;
-  height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   position: sticky;
+  min-height: 50px;
+  background-color: #0B0C1D;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
   z-index: 9999;
 }
-html body header h1 {
-  color: #839aff;
-  position: absolute;
-  bottom: 0;
-  left: 10px;
+html body header .warning {
+  background-color: #cad2f7;
+  bottom: calc(-1.3rem - 10px);
+  width: 100%;
+  text-align: center;
 }
-html body header ul {
+html body header .horizontal-align {
+  height: 50px;
+}
+html body header .horizontal-align h1 {
+  color: #839aff;
+  padding: 10px;
+}
+html body header .horizontal-align ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -138,7 +145,7 @@ html body header ul {
   bottom: 0;
   right: 10px;
 }
-html body header ul li {
+html body header .horizontal-align ul li {
   padding: 0;
   margin: 0;
   color: #839aff;
@@ -150,7 +157,7 @@ html body header ul li {
   transition: all 0.3s ease-in-out;
   width: auto;
 }
-html body header ul li:hover {
+html body header .horizontal-align ul li:hover {
   color: white;
 }
 html body .container {
@@ -218,8 +225,18 @@ html .gallery {
   grid-template-columns: repeat(auto-fit, 260px);
   gap: 20px;
 }
+@media screen and (min-width: 960px) {
+  html .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 html .gallery.mobile {
   grid-template-columns: repeat(auto-fit, 160px);
+}
+@media screen and (min-width: 960px) {
+  html .gallery.mobile {
+    grid-template-columns: repeat(2, 10px);
+  }
 }
 html .gallery.mobile .item {
   padding-top: 200%;
