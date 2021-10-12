@@ -279,13 +279,13 @@ html {
         
         display: grid;
         grid-template-columns: repeat(auto-fit, 260px);
-        @media screen and (min-width: 960px) {
+        @media screen and (max-width: 960px) {
             grid-template-columns: repeat(1, 1fr);
         }
         &.mobile {
             grid-template-columns: repeat(auto-fit, 160px);
-            @media screen and (min-width: 960px) {
-                grid-template-columns: repeat(2, 10px);
+            @media screen and (max-width: 960px) {
+                grid-template-columns: repeat(2, 1fr);
             }
             .item {
                 padding-top: 200%;
