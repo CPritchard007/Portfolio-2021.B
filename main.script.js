@@ -31,7 +31,7 @@ projects = [
         "id" : "lifesensible",
         "name" : "Life Sensible",
         "date" : "2021",
-        "description" : "This website is an e-commerce website that allows our customers to learn more about health in the age of technology <i>(the website is currently in development, so all content is to be changed.)</i>. <br><br>The website was created entirely by me with the use of WordPress and the Elementor plugin.",
+        "description" : "This website is an e-commerce website that allows our customers to learn more about health in the age of technology <i>(the website is currently in development, so all content is to be changed)</i>. <br><br>The website was created entirely by me with the use of WordPress and the Elementor plugin.",
         "link" : "https://lifesensible.com",
         "image": "@resources/web/lifesensible.png",
         "github" : "",
