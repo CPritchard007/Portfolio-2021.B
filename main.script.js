@@ -51,6 +51,7 @@ projects = [
     }
 ];
 
+
 function openDetailsPane(project) {
 
     windowWidth = window.innerWidth;
