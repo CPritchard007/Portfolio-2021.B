@@ -22,7 +22,7 @@ projects = [
         "date" : "2020",
         "description" : "This application assists users with keeping track of their cards. As an original fan of the pokemon card game, I know how hard it is to remember all of your decks; and there is always that one card that you need for all of them. This application solves that problem. This application was made for iPhone. <br><br> This application is a swift native application, with the use of the users local storage and the official pokemon card api.",
         "link" : "",
-        "image": "@resources/mobile/PokemonTCG.png",
+        "image": "@resources/mobile/PokemonTCG.PNG",
         "github" : "https://github.com/CPritchard007/Pokemon-TCG-Companion-app",
         "class" : ['mobile'],
         "preview": []
