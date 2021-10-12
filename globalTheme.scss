@@ -4,12 +4,24 @@
 }
 
 :root {
-    font-size: 18px;
+    font-size: 16px;
 }
 
-//create an animation that shakes the element
+// Global Styles
 $background-color: #11122C;
 $mobile-percentage: 50%;
+$primaryColor: rgb(131, 154, 255);
+$highlightColor: rgb(202, 210, 247);
+
+
+$h1font-size: 2.1rem;
+$h2font-size: 2rem;
+$h3font-size: 1.6rem;
+$h4font-size: 1.5rem;
+$h5font-size: 1.2rem;
+$pfont-size: 1rem;
+
+
 @keyframes shake {
     
     30% {
@@ -43,50 +55,51 @@ $mobile-percentage: 50%;
 }
 
 
-::-webkit-scrollbar-thumb:hover {
 
-}
-       
 abbr[title] {
-    border-bottom: none !important;
+    border-bottom: 1px solid $primaryColor !important;
     text-decoration: none !important;
 }
 
 h1 {
-
+    color: $primaryColor;
+    font-size: $h1font-size;
     user-select: none;
 }
 
 h2 {
-
+    color: $primaryColor;
+    font-size: $h2font-size;
     user-select: none;
 }
 
 h4 {
-    font-size: 2rem;
-    color: rgb(131, 154, 255);
+    color: $primaryColor;
+    font-size: $h4font-size;
     user-select: none;
 }
 
 h5 {
-    font-size: 1.8rem;
-    color: rgb(131, 154, 255);
+    color: $primaryColor;
+    font-size: $h5font-size;
     padding: 10px 0;
     user-select: none;
 }
 
 p {
-    color: rgb(131, 154, 255);
-    font-size: 1.1rem;
+    color: $primaryColor;
+    font-size: $pfont-size;
     user-select: none;
 }
 
 
 a {
-    color: #839aff;
+    font-size: inherit;
+    color: $primaryColor;
     text-decoration: none;
     
     &:hover {
+      
       text-decoration: dotted;
     }
   }
@@ -141,7 +154,7 @@ html {
             z-index: 9999;
 
             h1 {
-                color: rgb(131, 154, 255);
+                color: $primaryColor;
                 position: absolute;
                 bottom: 0;
                 left: 10px;
@@ -162,7 +175,7 @@ html {
                 li {
                     padding: 0;
                     margin: 0;
-                    color: rgb(131, 154, 255);
+                    color: $primaryColor;
                     font-size: 1.2rem;
                     font-weight: bold;
                     text-transform: uppercase;
@@ -191,7 +204,7 @@ html {
 
             h3 {
                 font-size: 2rem;
-                color: rgb(131, 154, 255);
+                color: $primaryColor;
             }
         }
     }
@@ -275,7 +288,7 @@ html {
                     overflow: inherit;
                     
                     &:hover .icon i, &:hover .icon svg {
-                        color: white !important;
+                        color: $highlightColor !important;
                     }
 
                     .icon {
@@ -288,7 +301,7 @@ html {
                             text-decoration: none !important;
                             i,  svg {
                                 font-size: 2rem;
-                                color: rgb(131, 154, 255);
+                                color: $primaryColor;
                                 transition: all 0.3s ease-in-out;
                             }
                         }
@@ -334,7 +347,7 @@ html {
                     left: -1px;
                     padding: 0 10px;
                     background-color: rgba(12, 16, 29, 0.911);
-                    color: rgb(131, 154, 255);
+                    color: $primaryColor;
                     border-radius: 0 0 10px 0;
                     border: 2px solid rgba(0, 0, 0, 0.61);
                     font-size: 0.8rem;
@@ -381,7 +394,7 @@ html {
         .item {
             width: $social-width;
             height: $social-width;
-            border: rgb(131, 154, 255) solid 2px;
+            border: $primaryColor solid 2px;
             border-radius: 50%;
             display: block;
             box-sizing: border-box;
@@ -391,9 +404,13 @@ html {
 
             &:hover {
                 cursor: pointer;
+
+                & svg {
+                    color: $highlightColor;
+                }
             }
             svg {
-                color: rgb(131, 154, 255);
+                color: $primaryColor;
                 width: 100%;
                 height: 100%;
                 padding: 10px;
@@ -501,19 +518,26 @@ html {
             .item {
                 width: 30px;
                 height: 30px;
-                background-color: rgb(131, 154, 255);
+                background-color: $primaryColor;
                 border-radius: 50px;
                 display: flex;
                 align-items: center;
                 cursor: pointer;
+                &.disabled {
+                    opacity: 0.5;
+                }
                 
                 span, i {
                     display: block;
                     width: 100%;
                     text-align: center;
                     user-select: none;
+                    color: black;
                 }
             }
+        }
+        i {
+            color: $highlightColor;
         }
     }
 
@@ -524,13 +548,13 @@ html {
 
         table {
             width: 100%;
-            border: 1px solid rgb(131, 154, 255);
-            color: rgb(131, 154, 255);
+            border: 1px solid $primaryColor;
+            color: $primaryColor;
             border-collapse: collapse;
-            border: 1px solid rgb(131, 154, 255);
+            border: 1px solid $primaryColor;
 
             td {
-                border: solid rgb(131, 154, 255);
+                border: solid $primaryColor;
                 border-width: 0 1px;
             }
             thead {
@@ -545,7 +569,7 @@ html {
             }
             tbody {
                 tr {
-                    border-top: 1px solid rgb(131, 154, 255);
+                    border-top: 1px solid $primaryColor;
                     gap: 10px;
                     td {
                         text-align: center;
@@ -558,7 +582,7 @@ html {
                         }
 
                         a {
-                            color: rgb(131, 154, 255);
+                            color: $primaryColor;
                             text-decoration: none;
                             font-size: 14px;
                         }

@@ -4,7 +4,7 @@
 }
 
 :root {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @keyframes shake {
@@ -32,38 +32,43 @@
 }
 
 abbr[title] {
-  border-bottom: none !important;
+  border-bottom: 1px solid #839aff !important;
   text-decoration: none !important;
 }
 
 h1 {
+  color: #839aff;
+  font-size: 2.1rem;
   user-select: none;
 }
 
 h2 {
+  color: #839aff;
+  font-size: 2rem;
   user-select: none;
 }
 
 h4 {
-  font-size: 2rem;
   color: #839aff;
+  font-size: 1.5rem;
   user-select: none;
 }
 
 h5 {
-  font-size: 1.8rem;
   color: #839aff;
+  font-size: 1.2rem;
   padding: 10px 0;
   user-select: none;
 }
 
 p {
   color: #839aff;
-  font-size: 1.1rem;
+  font-size: 1rem;
   user-select: none;
 }
 
 a {
+  font-size: inherit;
   color: #839aff;
   text-decoration: none;
 }
@@ -235,7 +240,7 @@ html .gallery.icon .item .item-container {
   overflow: inherit;
 }
 html .gallery.icon .item .item-container:hover .icon i, html .gallery.icon .item .item-container:hover .icon svg {
-  color: white !important;
+  color: #cad2f7 !important;
 }
 html .gallery.icon .item .item-container .icon {
   display: flex;
@@ -336,6 +341,9 @@ html .social-widget .item {
 html .social-widget .item:hover {
   cursor: pointer;
 }
+html .social-widget .item:hover svg {
+  color: #cad2f7;
+}
 html .social-widget .item svg {
   color: #839aff;
   width: 100%;
@@ -431,11 +439,18 @@ html .popupBar .buttonBar .item {
   align-items: center;
   cursor: pointer;
 }
+html .popupBar .buttonBar .item.disabled {
+  opacity: 0.5;
+}
 html .popupBar .buttonBar .item span, html .popupBar .buttonBar .item i {
   display: block;
   width: 100%;
   text-align: center;
   user-select: none;
+  color: black;
+}
+html .popupBar i {
+  color: #cad2f7;
 }
 html #pricelist {
   display: table;
