@@ -154,7 +154,7 @@ html {
             z-index: 9999;
 
             .warning {
-                background-color: $highlightColor;
+                background-color: rgb(202, 210, 247, .6);
                 bottom: calc(-1.3rem - 10px);
                 width: 100%;
                 text-align: center;

@@ -121,7 +121,7 @@ html body header {
   z-index: 9999;
 }
 html body header .warning {
-  background-color: #cad2f7;
+  background-color: rgba(202, 210, 247, 0.6);
   bottom: calc(-1.3rem - 10px);
   width: 100%;
   text-align: center;
