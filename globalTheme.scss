@@ -154,10 +154,22 @@ html {
             z-index: 9999;
 
             .warning {
+                display: block;
                 background-color: rgb(202, 210, 247, .8);
                 bottom: calc(-1.3rem - 10px);
-                width: 100%;
+                max-height: 20px;
                 text-align: center;
+                
+                transition: all .3s ease-in-out;
+                
+            }
+
+            &.scrolled {
+                .warning {
+                    overflow: hidden;
+                    max-height: 0;
+                    
+                }
             }
 
             .horizontal-align {

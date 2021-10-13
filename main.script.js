@@ -3,11 +3,20 @@ if (windowWidth < 760) {
     header = document.querySelector('header');
     warning = document.createElement('div');
     warning.classList.add('warning');
-    warning.innerHTML = 'for the best experiece, please use a computer';
-    console.log(warning);
+    warning.innerHTML = 'for more information, a larger screen is required';
     header.appendChild(warning);
 }
+//on scrolling down
+function onScroll () {
+    if (window.scrollY > 60) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+}
 
+//on scroll event
+window.addEventListener('scroll', onScroll);
 // console.log('connected to script');
 document.querySelector('.social-widget').addEventListener('click', e => document.querySelector('.social-widget').classList.toggle('active'));
 
