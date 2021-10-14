@@ -407,6 +407,7 @@ html .popupBar .image-container {
   left: 30px;
   transform: translateX(-400px);
   transition: all 0.5s ease-in-out;
+  pointer-events: none;
 }
 html .popupBar .image-container .image-box {
   width: 100%;
@@ -414,6 +415,7 @@ html .popupBar .image-container .image-box {
   padding-top: 65%;
   position: relative;
   margin-top: calc((100% - 65%) / 2);
+  pointer-events: none;
 }
 html .popupBar .image-container .image-box.mobile {
   width: 50%;

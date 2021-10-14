@@ -488,6 +488,7 @@ html {
             // background-color: rgba(173, 216, 230, 0.247);
             transform: translateX(-400px);
             transition: all 0.5s ease-in-out;
+            pointer-events: none;
 
             .image-box {
                 width: 100%;
@@ -495,6 +496,8 @@ html {
                 padding-top: 65%;
                 position: relative;
                 margin-top: calc((100% - 65%) / 2);
+                pointer-events: none;
+
 
                 &.mobile {
                     width: $mobile-percentage;
