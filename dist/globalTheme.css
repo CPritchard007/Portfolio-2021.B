@@ -124,7 +124,7 @@ html body header .warning {
   display: block;
   background-color: rgba(202, 210, 247, 0.8);
   bottom: calc(-1.3rem - 10px);
-  max-height: 20px;
+  max-height: 100px;
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
