@@ -24,17 +24,17 @@ webGallery = document.querySelector('.gallery.web');
 mobileGallery = document.querySelector('.gallery.mobile');
 
 projects = [
-    //  {
-    //     "id" : "t7chicken",
-    //     "name" : "T7Chicken Legacy",
-    //     "date" : "2021",
-    //     "description" : "A support application for users of the popular game Tekken 7. This application, on the completion of its development, will show all character moves as well as the frame data connected to it. <BR>This is a personal project intended to update T7ChickenPro, an application that has not been updated since 2017, and no longer is able to be updated due to its age. I intend to recreate the application with the assistance of its original developer to update the UI, as well as to add new features.",
-    //     "link" : "https://t7chicken.com",
-    //     "image": "@resources/mobile/T7Legacy.png",
-    //     "github" : "",
-    //     "class" : ["mobile"],
-    //     "preview": []
-    // },
+     {
+        "id" : "Condoblinds",
+        "name" : "Condo Blinds Calculator",
+        "date" : "2021",
+        "description" : "Built with Angular, this application allows the employer to calculate the total cost of installing blinds in a household.<br><br> The application replaces the use of excel and google sheets when calculating the cost of installment due to other spreadsheet apps inability to use certain features. The Application can be used to calculate large amounts of data; including the ability to save the data in a format that can be shown to customers easily.<br><br> The Application was built during my time at Gambit Ventures ltd. using only Angular tools within the project.",
+        "link" : "https://t7chicken.com",
+        "image": "@resources/web/condoBlinds.png",
+        "github" : "",
+        "class" : [],
+        "preview": []
+    },
     {
         "id" : "pokemontcg",
         "name" : "Pokémon Card Game Companion",
