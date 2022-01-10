@@ -29,9 +29,9 @@ projects = [
         "name" : "Condo Blinds Calculator",
         "date" : "2021",
         "description" : "Built with Angular, this application allows the employer to calculate the total cost of installing blinds in a household.<br><br> The application replaces the use of excel and google sheets when calculating the cost of installment due to other spreadsheet apps inability to use certain features. The Application can be used to calculate large amounts of data; including the ability to save the data in a format that can be shown to customers easily.<br><br> The Application was built during my time at Gambit Ventures ltd. using only Angular tools within the project.",
-        "link" : "https://t7chicken.com",
+        "link" : "https://cpritchard007.github.io/calculatorApp/",
         "image": "@resources/web/condoBlinds.png",
-        "github" : "",
+        "github" : "https://github.com/cpritchard007/calculatorApp",
         "class" : [],
         "preview": []
     },
